@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Nhập vào 1 chuỗi:");
+        let a = [];
+        let b = "-";
+        let c = "_";
+        for (let i = 0; i < str.length; i ++) {
+            a.push(str[i])
+            };
+        for (let j = 0; j < str.length; j ++ ) {
+            if(a.indexOf(b) != -1) {
+                a[a.indexOf(b)] = c;
+            }
+        }
+        alert(a.join(""));
+    </script>
+</body>
+</html>

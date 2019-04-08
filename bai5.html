@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhap chuoi 1");
+        let b = prompt("Nhap chuoi 2");
+        let c = true;
+        if (a.length == b.length) {
+            for ( let i = 0; i < a.length; i ++) {
+                if(a[i] === b[i]) {
+                    c = true;
+                } else {
+                    c = false;
+                }
+            }
+        } else {
+            c = false;
+        }
+
+        if (c) {
+            alert("2 chuoi giong nhau")
+        } else {
+            alert("2 chuoi khac nhau")
+        }
+    </script>
+</body>
+</html>
